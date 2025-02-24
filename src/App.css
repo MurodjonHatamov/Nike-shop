@@ -1,0 +1,268 @@
+.card{
+  width: 800px;
+  height: 400px;
+  background-color: aqua;
+}
+
+.nav_ul{
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+.nav_ul a {
+  color: #333333;
+  position: relative;
+  display: inline-block;
+  line-height: 1; 
+}
+
+.nav_ul a:hover {
+  color: black;
+  transition:all 0.4s ease-in-out ;
+}
+
+.nav_ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+
+}
+
+.nav_ul a:hover::after {
+  transform: scaleX(1);
+ 
+}
+
+
+.sidebar{
+  margin-left: 20px;
+  width: 80px;
+  font-size: 20px;
+  font-weight: 600;
+  /* background-color: #33333332; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  border-left: 2px solid rgba(70, 70, 70, 0.626);
+  position: relative;
+  color:#3a3a3ac3
+}
+
+
+
+.span1{
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.span1::after {
+  content: "";
+  position: absolute;
+  left: -54px; 
+  top: 50%; 
+  transform: translateY(-50%) rotate(90deg);
+  width: 50px;
+  height: 2px;
+  background-color: black;
+}
+
+
+.hero_info{
+  padding-left: 40px  ;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 500px;
+}
+.title{
+  width: 360px;
+}
+.title h1{
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 13px;
+}
+.title p{
+  color: #333333a8;
+  margin-bottom: 13px;
+}
+.price{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.price button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 20px;
+
+ background-color: transparent;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.prise_button:hover{
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+.prise_button{
+  width: 160px;
+  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  color: white;
+  font-size: 19px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.price span{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.hero{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+}
+.hero>img{
+  width: 700px;
+  position: absolute;
+  top: -100px;
+  right: -5%;
+  object-fit: contain;
+  /* background-color: #333333; */
+  pointer-events: none;
+
+
+
+}
+
+.Productappearance{
+  width: 500px;
+  height: 697px;
+  background-color:#F6F6F6;
+  position: absolute;
+  right: 0;
+  top: 50%; 
+  transform: translateY(-1000%);
+  padding:20px;
+  transition: 0.7s;
+  border-radius: 20px;
+}
+
+
+.hero.activeProductOn .Productappearance {
+  transition: 0.2s;
+  transform: translateY(-35%); 
+}
+
+.hero.activeProductOn .fixed_img {
+  opacity: 0;
+  visibility: hidden;
+  transition:all 0.3s ease-in-out;
+
+}
+
+
+.Productappearance img{
+  width: 100%;
+  object-fit: contain;
+}
+.Productappearance i{
+  font-size: 55px;
+  transform: rotate(-90deg);
+  color: #877C78;
+  cursor: pointer;
+}
+.Productappearance i:active{
+  transform: scale(-0.9) rotate(90deg);
+  color: #5a5554;
+}
+
+
+.ProductImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(30%);
+  
+}
+
+.section_boxs img{
+  /* width: 200px; */
+  height:100px ;
+  object-fit: contain;
+}
+.section_boxs{
+  display: flex;
+  align-items: center;
+gap: 10px;
+padding-left: 30px;
+cursor: pointer;
+
+}
+
+.section_box{
+  border-radius: 8px;
+  overflow: hidden;
+  background-color:#F6F6F6;
+  padding: 5px;
+}
+
+.section_box:hover{
+  background-color: #b5b4b485;
+  transition: 0.3s;
+}
+
+
+section.activeBox #IdBox{
+  background-color: #5a595985;
+  transition: 0.3s;
+}
+
+
+
+.section_imgs{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.watchIcon{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.watchIcon span{
+  margin-top: 8px ;
+  font-weight: 600;
+  color: #877C78;
+}
+
+
+
+
