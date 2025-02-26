@@ -33,7 +33,7 @@ const minus = ()=>{
     <>
      <div className="container">
    <nav >
-    <img src="/imgs/nikeLogo.svg" alt="" />
+    <img src="/src/imgs/nikeLogo.svg" alt="" />
 <ul className='nav_ul'>
   <li><a href="">Women</a></li>
   <li><a href="">Men</a></li>
