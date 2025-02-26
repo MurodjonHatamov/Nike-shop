@@ -70,7 +70,7 @@ const minus = ()=>{
 {/* 11,495.00 */}
 </div>
 
-  <img className='fixed_img' src="/imgs/hero_img.png" alt="" />
+  <img className='fixed_img' src="/src/imgs/hero_img.png" alt="" />
 
 <div className="Productappearance">
 <i onClick={()=>{
@@ -78,7 +78,7 @@ setClass("")
 setImg(1)
 }} class="fa-solid fa-circle-right"></i>
 <div className="ProductImg">
-<img src={`/imgs/hero_img${Img}.png`} alt="" />
+<img src={`/src/imgs/hero_img${Img}.png`} alt="" />
 
 </div>
 
@@ -95,7 +95,7 @@ setImg(1)
   setImg(1);
  }}  className="section_box">
 
-    <img src="/imgs/hero_img1.png" alt="" />
+    <img src="/src/imgs/hero_img1.png" alt="" />
 
     </div>
     <div id={Img==2 ? "IdBox":""} onClick={()=>{
@@ -103,17 +103,17 @@ setImg(1)
       setClass("activeProductOn")
       setImg(2);
     }} className="section_box">
-    <img src="/imgs/hero_img2.png" alt="" />
+    <img src="/src/imgs/hero_img2.png" alt="" />
     </div>  
     <div id={Img==3 ? "IdBox":""} onClick={()=>{
       setClass("activeProductOn")
       setImg(3);
     }} className="section_box">
-    <img src="/imgs/hero_img3.png" alt="" />
+    <img src="/src/imgs/hero_img3.png" alt="" />
     </div>
  </div>
 <div className="watchIcon">
-  <img src="/imgs/watchIcon.svg" alt="" />
+  <img src="/src/imgs/watchIcon.svg" alt="" />
   <span>Watch Video</span>
 </div>
   </div>
